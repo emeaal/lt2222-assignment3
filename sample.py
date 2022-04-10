@@ -1,3 +1,10 @@
+""" This script should be run with 5 arguments: a gzipped file to take samples from, how many samples to take(as integer), 
+percentage of how to split training and test data(integer), a file to save training data and a file to save test data.
+
+Example: python sample.py "UN-english.txt.gz" 1000 20 train_data_file test_data_file
+
+"""
+
 import argparse
 import gzip
 import random
