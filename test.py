@@ -1,5 +1,6 @@
 """
-This script will load the model output of train.py and the test sample output of test.py and calculate accuracy, precision, recall, and F-measure and print these out to the terminal.
+This script will load the model output of train.py and the test sample output of test.py and 
+calculate accuracy, precision, recall, and F-measure and print these out to the terminal.
 
 Example on how to run: python3 test.py svc_model test_datafile macro
 """
