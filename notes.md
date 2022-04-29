@@ -17,7 +17,7 @@ Support vector machine with linear kernel
 | 1000 samples| 0.235       | 0.19812596006 | 0.16629198966 | 0.1409799350 |
 | 5000 samples | 0.192      | 0.01476923076 | 0.07692307692 | 0.0247805885 |
 
-I had some troubles training the SVC model and therefore can't give more results with bigger sample sizes. Training with 1000 samples went very fast but 5000 samples took almost an hour. I tried finding ways to optimize the code to be to get more samples but couldn't do better than this unfortunately. The NB learned quite fast up until 10k samples and sampling more samples than this also took longer than expected, which I also tried to implement some ways to make the performance better.
+I had some troubles training the SVC model and therefore can't give more results with bigger sample sizes. Training with 1000 samples went very fast but 5000 samples took almost an hour. I tried finding ways to optimize the code to be able to get more samples but couldn't do better than this unfortunately. The NB learned quite fast up until 10k samples but having more samples than that took longer than expected.
 
-As for the results it can be seen that the sample of 1000 samples performed the best for both models. This is probably because the samples are generated randomly from the UN-english file and therefore may be a "better" sample than the other ones.
+As for the results it can be seen that the sample of 1000 samples had the best performance for both models. This is probably because the samples are generated randomly from the UN-english file and therefore the 1000 sample may have been a "better" sample than the others.
 
