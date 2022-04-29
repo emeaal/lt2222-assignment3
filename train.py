@@ -1,6 +1,8 @@
 """
 This script will take the training output of sample.py as the input file and learn either a model 
-from sklearn's MultinomialNB or SVC (with a linear kernel). It will save the model to a file. It is intended to be run from the command line with 3 arguments: name of the training file, which model(MultinomialNB or SVC) and the name of the file where to save the output.
+from sklearn's MultinomialNB or SVC (with a linear kernel). It will save the model to a file. 
+It is intended to be run from the command line with 3 arguments: name of the training file, 
+which model(MultinomialNB or SVC) and the name of the file where to save the output.
 
 For example: python3 train.py train_filename svc svc_modelfile
 """
@@ -61,7 +63,7 @@ def train_model(train_x, train_y, model):
     """ This function learns either NB model or SVC model and returns the model """
     model_name = model.lower()
     if model_name == 'svc':
-        clf = svm.SVC(kernel='linear')
+        clf = svm.SVC(kernel='linear', probability=True)
         clf.fit(train_x, train_y)
 
         return clf
