@@ -1,5 +1,6 @@
 """
-This script will take gzipped file and create samples of it. It should run from the command line with 5 commands; the input file, how many samples to make, percentage of test size for training and testing splits, name of the training file and name of the testing file.
+This script will take gzipped file and create samples of it. It should run from the command line with 5 commands; the input file, 
+how many samples to make, percentage of test size for training and testing splits, name of the training file and name of the testing file.
 
 For example: python3 sample.py example.txt.gz 100 20 train_filename test_filename
 
@@ -20,7 +21,7 @@ parser.add_argument("test_file", help="Where testing data is saved")
 args = parser.parse_args()
 
 consonants = sorted(
-    ['q', 'w', 'r', 't', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm'])
+    ['q', 'w', 'r', 't', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'y'])
 
 def sample_lines(file):
     """ This function opens a gzipped file and reads it. It looks for non digits and returns a list of samples"""
