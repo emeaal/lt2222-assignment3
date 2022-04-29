@@ -24,7 +24,7 @@ consonants = sorted(
     ['q', 'w', 'r', 't', 'p', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'y'])
 
 def sample_lines(file):
-    """ This function opens a gzipped file and reads it. It looks for non digits and returns a list of samples"""
+    """ This function opens a gzipped file and reads it. Returns a list of samples"""
     
     unzipped_file = gzip.open(file, 'rt')
     samples = []
